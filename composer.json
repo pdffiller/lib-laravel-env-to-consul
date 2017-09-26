@@ -8,5 +8,5 @@
     "psr-4":{
       "vagrant\\mypackage\\":"src"
     }
-  },
+  }
 }
