@@ -11,8 +11,8 @@
   }
   "repositories": [
         {
+			"type": "vcs",
             "url": "https://github.com/tet-zu/NewCommand.git",
-            "type": "git"
         }
     ],
 }
