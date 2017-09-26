@@ -2,11 +2,11 @@
 
 namespace vagrant\mypackage\Console\Commands;
 
-use Illuminate\Console\Command;
-use Symfony\Component\Console\Tests\Input\InputArgumentTest;
+    use Illuminate\Console\Command;
+    use Symfony\Component\Console\Tests\Input\InputArgumentTest;
 
-class NewCommand extends Command
-{
+    class NewCommand extends Command
+    {
     /**
      * The name and signature of the console command.
      *

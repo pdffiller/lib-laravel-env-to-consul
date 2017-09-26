@@ -14,7 +14,7 @@ class NewCommandServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
+        if (strpos(php_sapi_name(), 'cli') !== false) {
             $this->commands([
                 NewCommand::class,
             ]);
@@ -26,11 +26,11 @@ class NewCommandServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    /*protected $commands = [
+    protected $commands = [
         NewCommand::class,
-    ];*/
+    ];
     public function register()
     {
-        //s$this->commands($this->commands);
+        $this->commands($this->commands);
     }
 }
