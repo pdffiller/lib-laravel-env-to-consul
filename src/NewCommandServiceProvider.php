@@ -3,7 +3,7 @@
 namespace mypackage;
 
 use Illuminate\Support\ServiceProvider;
-use mypackage\Console\Commands\NewCommand;
+use vagrant\mypackage\Console\Commands\NewCommand;
 
 class NewCommandServiceProvider extends ServiceProvider
 {
@@ -31,6 +31,6 @@ class NewCommandServiceProvider extends ServiceProvider
     ];*/
     public function register()
     {
-        //$this->commands($this->commands);
+        //s$this->commands($this->commands);
     }
 }
