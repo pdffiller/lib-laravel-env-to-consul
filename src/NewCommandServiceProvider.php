@@ -14,11 +14,7 @@ class NewCommandServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //if ($this->app->runningInConsole()) {
-            $this->commands([
-                NewCommand::class,
-            ]);
-       // }
+
     }
 
     /**
@@ -26,8 +22,11 @@ class NewCommandServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    protected $commands = [
+        NewCommand::class,
+    ];
     public function register()
     {
-        //
+        $this->commands($this->commands);
     }
 }
