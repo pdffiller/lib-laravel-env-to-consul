@@ -1,0 +1,13 @@
+{
+    "name": "vagrant/mypackage",
+    "description": "new command",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {},
+	"autoload":{
+		"psr-4":{
+			"vagrant\\mypackage\\":"src"
+		}
+	},
+}
