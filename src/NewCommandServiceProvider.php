@@ -14,11 +14,11 @@ class NewCommandServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if ($this->app->runningInConsole()) {
+        //if ($this->app->runningInConsole()) {
             $this->commands([
                 NewCommand::class,
             ]);
-        }
+       // }
     }
 
     /**
