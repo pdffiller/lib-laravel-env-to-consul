@@ -9,6 +9,10 @@
       "vagrant\\mypackage\\":"src"
     }
   }
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  "repositories": [
+        {
+            "url": "https://github.com/tet-zu/NewCommand.git",
+            "type": "git"
+        }
+    ],
 }
