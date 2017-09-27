@@ -1,10 +1,9 @@
 <?php
 
 namespace vagrant\mypackage\Console\Commands;
-
+use vagrant\mypackage\ConsulConfigNotFoundException;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Tests\Input\InputArgumentTest;
-
 class NewCommand extends Command
 {
     /**
@@ -38,8 +37,8 @@ class NewCommand extends Command
      */
     public function handle()
     {
-        if(!$filePath = realpath(__DIR__."/../../../.env.consul")) {
-            throw new ConsulConfigNotFoundException(("The consul config file was not found by path '" . realpath(__DIR__."/../../../") . "/.env.consul'"));
+        if(!$filePath = realpath(__DIR__."/../../../../../../.env.consul")) {
+            throw new ConsulConfigNotFoundException(("The consul config file was not found by path '" . realpath(__DIR__."/../../../../../../") . "/.env.consul'"));
         }
         $fileResource = fopen($filePath, 'r');
         $config = [];
