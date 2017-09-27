@@ -1,6 +1,6 @@
 <?php
 
-namespace mypackage;
+namespace vagrant\mypackage;
 
 use Illuminate\Support\ServiceProvider;
 use vagrant\mypackage\Console\Commands\NewCommand;
