@@ -3,7 +3,9 @@
   "description": "new command",
   "type": "library",
   "license": "MIT",
-  "require": {},
+  "require": {
+    "sensiolabs/consul-php-sdk": "^3.0"
+  },
   "autoload":{
     "psr-4":{
       "vagrant\\mypackage\\":"src"
