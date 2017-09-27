@@ -1,6 +1,6 @@
 <?php
 
-namespace vagrant\mypackage\Console\Commands;
+namespace mypackage\Console\Commands;
 
     use Illuminate\Console\Command;
     use Symfony\Component\Console\Tests\Input\InputArgumentTest;
