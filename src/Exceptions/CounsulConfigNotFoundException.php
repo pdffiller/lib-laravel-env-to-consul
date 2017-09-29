@@ -1,5 +1,5 @@
 <?php
-namespace vagrant\mypackage;
+namespace pdffiller\lib-laravel-env-to-consul;
 class ConsulConfigNotFoundException extends \Exception
 {
 }
