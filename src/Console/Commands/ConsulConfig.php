@@ -1,7 +1,7 @@
 <?php
 
-namespace vagrant\mypackage\Console\Commands;
-use vagrant\mypackage\ConsulConfigNotFoundException;
+namespace pdffiller\lib-laravel-env-to-consul\Console\Commands;
+use pdffiller\lib-laravel-env-to-consul\ConsulConfigNotFoundException;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Tests\Input\InputArgumentTest;
 class ConsulConfig extends Command

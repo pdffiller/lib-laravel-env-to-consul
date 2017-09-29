@@ -1,9 +1,9 @@
 <?php
 
-namespace vagrant\mypackage;
+namespace pdffiller\lib-laravel-env-to-consul;
 
 use Illuminate\Support\ServiceProvider;
-use vagrant\mypackage\Console\Commands\ConsulConfig;
+use pdffiller\lib-laravel-env-to-consul\Console\Commands\ConsulConfig;
 
 class ConsulConfigServiceProvider extends ServiceProvider
 {

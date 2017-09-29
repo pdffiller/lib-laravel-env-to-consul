@@ -1,5 +1,5 @@
 {
-  "name": "vagrant/mypackage",
+  "name": "pdffiller/lib-laravel-env-to-consul",
   "description": "new command",
   "type": "library",
   "version": "1.0",
@@ -9,7 +9,7 @@
   },
   "autoload":{
     "psr-4":{
-      "vagrant\\mypackage\\":"src"
+      "pdffiller\\lib-laravel-env-to-consul\\":"src"
     }
   }
 }
