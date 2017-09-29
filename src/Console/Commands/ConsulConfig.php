@@ -4,7 +4,7 @@ namespace vagrant\mypackage\Console\Commands;
 use vagrant\mypackage\ConsulConfigNotFoundException;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Tests\Input\InputArgumentTest;
-class NewCommand extends Command
+class ConsulConfig extends Command
 {
     /**
      * The name and signature of the console command.

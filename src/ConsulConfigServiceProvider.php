@@ -3,9 +3,9 @@
 namespace vagrant\mypackage;
 
 use Illuminate\Support\ServiceProvider;
-use vagrant\mypackage\Console\Commands\NewCommand;
+use vagrant\mypackage\Console\Commands\ConsulConfig;
 
-class NewCommandServiceProvider extends ServiceProvider
+class ConsulConfigServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -16,7 +16,7 @@ class NewCommandServiceProvider extends ServiceProvider
     {
         if (strpos(php_sapi_name(), 'cli') !== false) {
             $this->commands([
-                NewCommand::class,
+                ConsulConfig::class,
             ]);
         }
     }
@@ -27,7 +27,7 @@ class NewCommandServiceProvider extends ServiceProvider
      * @return void
      */
     protected $commands = [
-        NewCommand::class,
+        ConsulConfig::class,
     ];
     public function register()
     {
