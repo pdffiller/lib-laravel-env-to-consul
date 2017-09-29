@@ -1,4 +1,4 @@
-Step 1: Add "repositories" to composer.json
+**Step 1: Add "repositories" to composer.json**
 	
 	"repositories": [
         {
@@ -7,6 +7,6 @@ Step 1: Add "repositories" to composer.json
         }
     ]
 
-Step 2: Run "composer require vagrant/mypackage:dev-master" in command prompt
+**Step 2: Run** "composer require vagrant/mypackage:dev-master" **in command prompt**
 
-Step 3: Add to \config\app.php 'providers' => [... \vagrant\mypackage\ConsulConfigServiceProvider::class
+**Step 3: Add to \config\app.php** 'providers' => [... \vagrant\mypackage\ConsulConfigServiceProvider::class
