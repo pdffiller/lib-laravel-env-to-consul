@@ -7,6 +7,6 @@
         }
     ]
 
-**Step 2: Run** "composer require pdffiller/lib_laravel_env_to_consul" **in command prompt**
+**Step 2: Run** "composer require pdffiller/lib-laravel-env-to-consul" **in command prompt**
 
-**Step 3: Add to \config\app.php** 'providers' => [... \vagrant\mypackage\ConsulConfigServiceProvider::class
+**Step 3: Add to \config\app.php** 'providers' => [... \pdffiller\LibLaravelEnvToConsul\ConsulConfigServiceProvider::class
