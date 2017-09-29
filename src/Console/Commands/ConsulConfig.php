@@ -60,6 +60,6 @@ class ConsulConfig extends Command
                 continue;
             }
         }
-        die("DONE!");
+        echo "DONE!";
     }
 }
