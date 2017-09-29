@@ -1,9 +1,9 @@
 <?php
 
-namespace pdffiller\lib_laravel_env_to_consul;
+namespace pdffiller\LibLaravelEnvToConsul;
 
 use Illuminate\Support\ServiceProvider;
-use pdffiller\lib_laravel_env_to_consul\Console\Commands\ConsulConfig;
+use pdffiller\LibLaravelEnvToConsul\Console\Commands\ConsulConfig;
 
 class ConsulConfigServiceProvider extends ServiceProvider
 {

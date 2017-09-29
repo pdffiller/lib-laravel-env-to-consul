@@ -1,5 +1,5 @@
 <?php
-namespace pdffiller\lib_laravel_env_to_consul;
+namespace pdffiller\LibLaravelEnvToConsul;
 class ConsulConfigNotFoundException extends \Exception
 {
 }
