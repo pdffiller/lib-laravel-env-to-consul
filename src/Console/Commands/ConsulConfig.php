@@ -1,7 +1,7 @@
 <?php
 
-namespace pdffiller\lib-laravel-env-to-consul\Console\Commands;
-use pdffiller\lib-laravel-env-to-consul\ConsulConfigNotFoundException;
+namespace pdffiller\lib_laravel_env_to_consul\Console\Commands;
+use pdffiller\lib_laravel_env_to_consul\ConsulConfigNotFoundException;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Tests\Input\InputArgumentTest;
 class ConsulConfig extends Command

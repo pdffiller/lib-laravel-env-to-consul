@@ -1,5 +1,5 @@
 {
-  "name": "pdffiller/lib-laravel-env-to-consul",
+  "name": "pdffiller/lib_laravel_env_to_consul",
   "description": "new command",
   "type": "library",
   "version": "1.0",
@@ -9,7 +9,7 @@
   },
   "autoload":{
     "psr-4":{
-      "pdffiller\\lib-laravel-env-to-consul\\":"src"
+      "pdffiller\\lib_laravel_env_to_consul\\":"src"
     }
   }
 }
