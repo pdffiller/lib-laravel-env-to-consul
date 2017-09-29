@@ -2,7 +2,6 @@
   "name": "pdffiller/lib-laravel-env-to-consul",
   "description": "new command",
   "type": "library",
-  "version": "1.0",
   "license": "MIT",
   "require": {
     "sensiolabs/consul-php-sdk": "^3.0"
