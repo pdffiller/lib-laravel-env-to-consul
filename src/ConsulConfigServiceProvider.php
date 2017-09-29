@@ -3,7 +3,7 @@
 namespace pdffiller\lib_laravel_env_to_consul;
 
 use Illuminate\Support\ServiceProvider;
-use \pdffiller\lib_laravel_env_to_consul\Console\Commands\ConsulConfig;
+use pdffiller\lib_laravel_env_to_consul\Console\Commands\ConsulConfig;
 
 class ConsulConfigServiceProvider extends ServiceProvider
 {

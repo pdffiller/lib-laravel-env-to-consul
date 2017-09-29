@@ -1,5 +1,5 @@
 {
-  "name": "pdffiller/lib_laravel_env_to_consul",
+  "name": "pdffiller/lib-laravel-env-to-consul",
   "description": "new command",
   "type": "library",
   "version": "1.0",
