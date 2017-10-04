@@ -54,7 +54,7 @@ class ConsulConfig extends Command
             list($key, $value) = explode("=", $row);
             $config[] = ['key' => trim($key), 'value' => trim($value)];
             try{
-                $kv->put('us-east-1/apps/' . env('CONSUL_SERVICE_NAME') . '/'. env('SERVICE_ENV') .'/'.strtolower(trim($key)), trim($value));
+                $kv->put(env('REGION','us-east-1').'/apps/' . env('CONSUL_SERVICE_NAME', 'test') . '/'. env('SERVICE_ENV', 'dev') .'/'.strtolower(trim($key)), trim($value));
             } catch (\Exception $e) {
                 echo strtolower(trim($key)). " already exists. skipped ".PHP_EOL;
                 continue;
