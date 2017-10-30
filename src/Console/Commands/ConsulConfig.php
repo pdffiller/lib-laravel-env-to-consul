@@ -44,6 +44,7 @@ class ConsulConfig extends Command
         $config = [];
         $sf = new \SensioLabs\Consul\ServiceFactory();
         $kv = $sf->get('kv'); //TODO TEST THIS???
+        $errorsCount = 0;
         while(false !== ($row = fgets($fileResource))) {
             if (strpos($row, "=") === false) {
                 continue;
@@ -56,10 +57,11 @@ class ConsulConfig extends Command
             try{
                 $kv->put(env('REGION','us-east-1').'/apps/' . env('CONSUL_SERVICE_NAME', 'test') . '/'. env('SERVICE_ENV', 'dev') .'/'.strtolower(trim($key)), trim($value));
             } catch (\Exception $e) {
-                echo strtolower(trim($key)). " already exists. skipped ".PHP_EOL;
+                $errorsCount++;
+                echo "[".strtolower(trim($key)). "] - error, skipped".PHP_EOL.$e->getMessage().PHP_EOL;
                 continue;
             }
         }
-        echo "DONE!";
+        echo "Finished with $errorsCount errors!";
     }
 }
